@@ -1,0 +1,173 @@
+#pane{
+
+    -fx-background-color: linear-gradient(to left,  rgba(5,66,5,1) 0%, rgba(16,87,31,1) 51%, rgba(5,48,10,1) 100%);
+    /*-fx-background-image: url("snoke2d.gif");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 600 500;
+    -fx-background-position: center center; */
+
+}
+#eska
+{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fcfffd;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+#welcome
+{
+    -fx-font-size: 60px;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: #f8ffff;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+#info
+{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fbfff9;
+
+}
+#setname
+{
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: #fbfff9;
+
+}
+#layoutname
+{
+    -fx-background-color: linear-gradient(to left,  rgba(5,66,5,1) 0%, rgba(16,87,31,1) 51%, rgba(5,48,10,1) 100%);
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#buttonnew
+{
+    -fx-text-fill: #fcfffd;
+    -fx-background-color:
+            linear-gradient(#016401, #016401),
+            radial-gradient(center 50% -40%, radius 200%, #016b01 45%, #007903 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+
+
+}
+#buttonexit
+{
+    -fx-background-color:
+            linear-gradient(#6d06a2, #6d06a2),
+            radial-gradient(center 50% -40%, radius 200%, #9500cc 45%, #7500a0 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #fcfffd;
+}
+#buttonmusicon
+{
+    -fx-background-color:
+            linear-gradient(#289ef1, #1a6da8),
+            radial-gradient(center 50% -40%, radius 200%, #289ef1 45%,#1a6da8 50%);
+    -fx-background-radius: 6, 5;
+
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #fcfffd;
+}
+#buttonhigh
+{
+    -fx-background-color:
+            linear-gradient(#ad7811, #ad7811),
+            radial-gradient(center 50% -40%, radius 200%, #c17b02 45%, #af7003 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #fcfffd;
+}
+
+.slider .track
+{
+    -fx-background-color: green;
+    -fx-pref-height:5;
+    -fx-pref-width:5;
+}
+
+.slider .thumb
+{
+    -fx-background-color: black;
+}
+
+
+
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color: #10571f;
+}
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+    -fx-cell-size: 35;
+    -fx-alignment: center-left;
+    -fx-background-color: #29292D;
+    -fx-border-color: #29292D;
+    -fx-text-fill: lightgray;
+    -fx-alignment: CENTER_LEFT;
+
+}
+.table-row-cell:selected {
+    -fx-background-color: whitesmoke;
+    -fx-text-background-color: #10571f;
+
+
+}
+
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:derive( #10571f,80%);
+
+    -fx-background-radius: 2em;
+    -fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #10571f,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+
+}
+
+/* chart properties */
+
+.chart {
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-legend-visible: false;
+}
+.chart-plot-background {
+    -fx-background-color:transparent;
+}
+
+.chart-pie {
+    -fx-border-color: derive(-fx-pie-color, 1%);
+    -fx-border-width: 0px;
+}
+
+
+
